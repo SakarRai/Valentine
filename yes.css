@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: fantasy;
+}
+
+body {
+    margin: 0; /* By default web browsers will have 8px */
+    border-width: 0;
+}
+
+footer{
+    position: fixed; left: 0; bottom: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(235, 176, 129);
+    font-size: 10px;
+    letter-spacing: 2px;
+    height: 30px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    
+}
+
+/* -------------------------content------------------------- */
+.content {
+    display: flex;
+    flex-direction: column; /* Add this if you want items to stack vertically */
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    background-color: rgb(253, 221, 222);
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto; /* Centers it horizontally */
+}
+
+img{
+    width: 250px;
+    height: fit-content;
+}
+
+h1, h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+}
+
+.yesclicked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text inside the container */
+}
+
+.yesclicked h1 {
+    font-size: 88px;
+    color: rgb(253, 109, 109);
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px #888;
+}
+
+.yesclicked h2 {
+    color: rgb(204, 114, 114);
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 600px) { /* Responsive layout */
+    .content {
+        max-width: 100vw;
+    }
+}

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0; 
+}
+html {
+    scroll-behavior: smooth;
+    font-family:fantasy;
+}
+body{
+    margin: 0px; /* By default web browsers will have 8px*/
+    border-width: 0px;
+
+}
+
+footer{
+    position: fixed; left: 0; bottom: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(216, 148, 92);
+    font-size: 10px;
+    letter-spacing: 2px;
+    height: 30px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+
+}
+/* -------------------------content------------------------- */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(rgb(240, 175, 168), rgb(255, 235, 235));
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto; /* Centers it horizontally */
+}
+h1, h2{
+    display: flex;
+    align-items: center;
+    display: block;
+    justify-content: space-evenly;
+    text-align: center; /* Centers text and buttons */
+
+}
+
+/* -------------------------The big Question------------------------- */
+
+.myvalentine h1{
+    font-size: 50px;
+    color: rgb(204, 114, 114);
+    font-weight: 100;
+    letter-spacing: 2px;
+
+}
+/* -------------------------bubus------------------------- */
+.images {
+    display: flex;
+    gap: 0px; /* Space between buttons */
+    justify-content: center; /* Centers buttons in the container */
+    margin-top: 5px;
+    
+}
+.content img{
+    width: 150px;
+    height: fit-content;
+    padding: 50px;
+
+}
+/* -------------------------button------------------------- */
+.buttons {
+    display: flex;
+    gap: 150px; /* Space between buttons */
+    justify-content: center; /* Centers buttons in the container */
+    margin-top: 5px;
+}
+
+.buttons #yesButton{
+
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient( rgb(107, 206, 152), #d1ffd3);
+    border: none;
+    color: rgb(240, 255, 255);
+    font-size: 20px;
+    cursor: grabbing;
+    
+}
+.buttons #yesButton:hover {
+    transition: 0.3s ease;
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.5);
+  }
+
+.buttons #noButton{
+
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient( rgba(255, 105, 105, 0.5), rgba(206, 0, 0, 0.5));
+    border: none;
+    color: rgb(240, 255, 255);
+    font-size: 20px;
+    cursor: grabbing;
+    transition: left 0.2s ease, top 0.2s ease;
+    z-index: 999;
+}
+
+
+
+  @media(max-width: 600px){ /* /* Responsive layout - when the screen is less than 600px wide it changes the layout and hides the image*/
+    .content{
+        max-width: 100vw;
+    }
+}
