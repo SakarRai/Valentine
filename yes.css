@@ -4,15 +4,22 @@
     padding: 0;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
     font-family: fantasy;
-}
-
-body {
     margin: 0; /* By default web browsers will have 8px */
     border-width: 0;
+    cursor: none;
 }
+.custom-cursor {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url("milkmochacursor.gif");
+    background-size: cover;
+    pointer-events: none; /* So it doesn't interfere with clicking */
+}
+
 
 footer{
     position: fixed; left: 0; bottom: 0; 
