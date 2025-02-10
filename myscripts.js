@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         noButton.style.top = `${y}px`;
 
         hoverCount++;
-        if (hoverCount >= 3 && hoverCount <= 26) {
+        if (hoverCount >= 3 && hoverCount <= 27) {
             if (messageElement) {
                 document.body.removeChild(messageElement);
             }
