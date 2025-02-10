@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const messages = [
         "Are you sure?",
         "Really sure?",
+        "really really sure?",
         "Think about it",
+        "Tyou don't want to do this",
         "I will be really sad..",
         "I will be really really sad..",
         "Wow...",
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         "I can't believe this",
         "I'll give you the silent treatment",
         "i really mean it",
+        "you're breaking my heart",
         "..hmph",
         "",
         "",
@@ -23,6 +26,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ". . .",
         ". . . .",
         "..You're still trying",
+        "Give up you cant win...",
+        "I am faster then you..",
+        "you can't catch me",
         "I can do this all day - Captian America",
         "",
 
@@ -38,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         noButton.style.top = `${y}px`;
 
         hoverCount++;
-        if (hoverCount >= 3 && hoverCount <= 21) {
+        if (hoverCount >= 3 && hoverCount <= 26) {
             if (messageElement) {
                 document.body.removeChild(messageElement);
             }
