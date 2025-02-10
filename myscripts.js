@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         "Really sure?",
         "really really sure?",
         "Think about it",
-        "Tyou don't want to do this",
+        "You don't want to do this",
         "I will be really sad..",
         "I will be really really sad..",
         "Wow...",
