@@ -13,8 +13,8 @@ html, body {
 }
 .custom-cursor {
     position: absolute;
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     background-image: url("milkmochacursor.gif");
     background-size: cover;
     pointer-events: none; /* So it doesn't interfere with clicking */
